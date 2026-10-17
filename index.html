@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NicsHeel Studying html</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="images/png" href="images/favicon.png">
-    
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/favicon.png">
@@ -32,12 +31,10 @@
     <header>
         <nav>
             <h1>Made By Nics</h1>
-            <ul>
-                <li>english</li>
-                <li>skateboarding</li>
-                <li>editing</li>
-                <li>programmation</li>
-            </ul>
+            <a href="">english</a>
+            <a href="">skateboarding</a>
+            <a href="">editing</a>
+            <a href="">programmation</a>
         </nav>
     </header>
 
@@ -45,13 +42,33 @@
         <article>
             <section>
                 <div id="about nics">
-                
+                    <h1>About NicsHeel</h1>
+                    <p>Nics, he is a programmer, video editor, skater, english speaker,
+                        he likes to learn things, he also tried to learn play guitar but he forget to practice
+                        one day he will learn to play guitar, he will to be a good skater, good video editor,
+                        good programmer and fluently in english, i hear storys, he want to create cool thing in programmation yeah,
+                        maybe the nics friend also will learn how to programming, it is would be cool. 
+                    </p>
                 </div>
                 <div id="audio">
-
+                    <!--background music-->
+                    <audio id="backgroundMusic" autoplay loop>
+                        <source src="audios/map postal 2.mp3" type="audio/mpeg">
+                        <source src="audios/Map Postal 2.wav" type="audio/wav">
+                    </audio>
+                    <!-- My favorite rock: -->
+                    <p>My Favority Rock Yeah</p>
+                    <audio id="Rock" controls>
+                        <source src="audios/Kids Arent Alrigth.mp3" type="audio/mpeg">
+                        <source src="audios/Kids Arent Alrigth.wav" type="audio/wav">
+                    </audio>
                 </div>
                 <div id="image">
-
+                    <!-- NicsHeel Image: -->
+                    <a href="https://www.youtube.com/@NicsHeel" title="This is The NicsHeel" target="_blank">
+                    <img src="images/NicsHeel.png" alt="This is The NicsHeel"
+                    height="450px">
+                    </a>
                 </div>
             </section>
         </article>
@@ -59,10 +76,36 @@
         <article>
             <section>
                 <div id="video">
-
+                    <video heigth="100px" controls autoplay loop muted>
+                        <source src="videos/VarialHeel.mp4" type="video/mp4">
+                        <source src="videos/VarialHeelflip.webm" type="video/webm">
+                    </video>
                 </div>
-                <div id="list">
-                    
+                <div class="questions">
+                    <details>
+                        <summary>Who is this guy in the left?</summary>
+                        <p>He is my favorite pro skater Luan de Oliveira, I like to see that cool tricks, heelflips, 360 flips, that is cool, one day i will se him? Yeah.</p>
+                   </details>
+                </div>
+                <div class="questions">
+                    <details>
+                        <summary>How to do heelflip</summary>
+                        <p>i do not know yet hehe, one day i will put on this page how to do when i learn, learn how to roll off, jump off, jump over things, today i dreamed about roll off the curbs, friday 10/16/26</p>
+                    </details>
+                </div>
+                <div class="questions">
+                    <details>
+                        <summary>About Youtube Videos</summary>
+                        <p>im going to record more youtube videos, i wrote so much script to a video but i dont record everything in the script, i wanna record more cool videos</p>
+                    </details>
+                </div>
+                <div class="questions">
+                    <details>
+                        <summary>what you do when you are programming</summary>
+                        <p>i spend my time searching how to create some things, i try to understand how the code works, i make new projects (make new projects it is cool, i like make new invetions), Follow me to see my
+                        <a href="https://github.com/NicsHeel" id="linkmarked" target="_blank" title="My Inventions yeah"><span>inventions Made By Nics</span></a>
+                        </p>
+                    </details>
                 </div>
             </section>
         </article>
@@ -70,12 +113,18 @@
 
     <footer>
         <nav>
-
+            <a href="index.html">Videos</a>
+            <a href="">Inventions</a>
+            <a href="">portifólio</a>
         </nav>
         <address id="contact">
-
+            <h1>contacts</h1>
+            <a href="https://www.youtube.com/@NicsHeel" title="comment your idea in my videos, you will win credits, i like read comments" target="_blank">Youtube</a>
+            <a href="https://github.com/NicsHeel" title="comment your idea in one of my projects made by NicsHeel, you will win credits Yeah." target="_blank">GitHub</a>
         </address>
     </footer>
+
+    <script src="index.js"></script>
 
 </body>
 </html>
