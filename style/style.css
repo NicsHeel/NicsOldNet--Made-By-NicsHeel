@@ -1,3 +1,173 @@
-#linkmarked {
-    color: red;
+@charset "UTF_8";
+
+html, body {
+    width: 100vw;
+    height: 100vh;
 }
+
+* {
+    font-family: "Silkscreen", "VT323", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Header here: */ 
+
+/*
+header {
+    background-color: rgb(184, 239, 197);
+    border: 3px solid;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.headercontent {
+    min-width: 0;
+}
+
+.Iconsheader {
+    display: flex;
+    gap: 3px;
+    padding: 3px;
+    flex-shrink: 0;
+}
+
+.Iconsheader img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+#headertitle {
+    background-color: rgb(209, 209, 209);
+    padding-left: 15px;
+    overflow-wrap: break-word;
+}
+
+#headernav {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+*/
+
+/*
+header {
+    background-color: rgb(184, 239, 197);
+    border: 3px solid;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.headercontent {
+    min-width: 0;
+}
+
+.Iconsheader {
+    display: flex;
+    gap: 3px;
+    padding: 3px;
+    flex-shrink: 0;
+}
+
+.Iconsheader img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+#headertitle {
+    background-color: rgb(209, 209, 209);
+    padding-left: 15px;
+    overflow-wrap: break-word;
+}
+
+#headernav {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+*/
+
+
+/* Header: */
+
+header {
+    background-color: rgba(210, 210, 210, 0.808);
+    border: 3px solid;
+}
+
+.headerbar {
+    background-color: rgb(18, 9, 188);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#headertitle {
+    color: whitesmoke;
+    padding-left: 15px;
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+
+.Iconsheader {
+    display: flex;
+    gap: 3px;
+    padding: 3px;
+    flex-shrink: 0;
+}
+
+.Iconsheader img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+#headernav {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.9e;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Container here: */
+
+#container1 {
+    background-color: rgb(199, 255, 114);
+    display: none;
+}
+
+#container2 {
+    background-color: brown;
+    display: none;
+}
+
+footer {
+    background-color: bisque;
+    display: none;
+}
+
+

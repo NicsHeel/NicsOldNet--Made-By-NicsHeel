@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NicsHeel Studying html</title>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-query.css">
+    
     <link rel="icon" type="images/png" href="images/favicon.png">
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon.png">
@@ -27,20 +30,73 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-
+<!--
     <header>
-        <nav>
-            <h1>Made By Nics</h1>
+        <div class="headercontent">
+            <h1 id="headertitle">Made By NicsHeel</h1>
+            <nav id="headernav">
+                <a href="">english</a>
+                <a href="">skateboarding</a>
+                <a href="">editing</a>
+                <a href="">programmation</a>
+            </nav>
+        </div>
+        <div  class="Iconsheader">
+            <img src="images/icone N.png" alt="Icon n">
+            <img src="images/icone I.png" alt="icon i">
+            <img src="images/icone C.png" alt="icon C">
+            <img src="images/icone S.png" alt="icon S">
+        </div>
+    </header>
+-->
+<!--
+<header>
+    <div class="headercontent">
+        <h1 id="headertitle">NicsHeel</h1>
+
+        <nav id="headernav">
+                <a href="">english</a>
+                <a href="">skateboarding</a>
+                <a href="">editing</a>
+                <a href="">programmation</a>
+        </nav>
+    </div>
+
+    <div class="Iconsheader">
+        <img src="images/icone N.png" alt="">
+        <img src="images/icone I.png" alt="Minimizar">
+        <img src="images/icone C.png" alt="Maximizar">
+        <img src="images/icone S.png" alt="Fechar">
+    </div>
+</header>
+-->
+
+
+<header>
+    <div class="headerbar">
+        <h1 id="headertitle">Made By Nics Heel</h1>
+
+        <div class="Iconsheader">
+            <img src="images/icone N.png" alt="Minimizar">
+            <img src="images/icone i.png" alt="Maximizar">
+            <img src="images/icone C.png" alt="Fechar">
+            <img src="images/icone S.png" alt="">
+        </div>
+    </div>
+
+    <nav id="headernav">
             <a href="">english</a>
             <a href="">skateboarding</a>
             <a href="">editing</a>
             <a href="">programmation</a>
-        </nav>
-    </header>
+            <a href=""></a>
+    </nav>
+</header>
+
 
     <main>
         <article>
-            <section>
+            <section id="container1">
                 <div id="about nics">
                     <h1>About NicsHeel</h1>
                     <p>Nics, he is a programmer, video editor, skater, english speaker,
@@ -74,9 +130,9 @@
         </article>
 
         <article>
-            <section>
+            <section id="container2">
                 <div id="video">
-                    <video heigth="100px" controls autoplay loop muted>
+                    <video width="450px" controls autoplay loop muted>
                         <source src="videos/VarialHeel.mp4" type="video/mp4">
                         <source src="videos/VarialHeelflip.webm" type="video/webm">
                     </video>
