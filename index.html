@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NicsHeel Studying html</title>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media-query.css">
     
@@ -71,33 +72,52 @@
 </header>
 -->
 
-
 <header>
     <div class="headerbar">
         <h1 id="headertitle">Made By Nics Heel</h1>
 
         <div class="Iconsheader">
-            <img src="images/icone N.png" alt="Minimizar">
-            <img src="images/icone i.png" alt="Maximizar">
-            <img src="images/icone C.png" alt="Fechar">
-            <img src="images/icone S.png" alt="">
+            <img class="N" src="images/icone N.png" alt="">
+            <img class="I" src="images/icone i.png" alt="">
+            <img class="C" src="images/icone C.png" alt="">
+            <img class="S" src="images/icone S.png" alt="">
         </div>
     </div>
 
     <nav id="headernav">
-            <a href="">english</a>
-            <a href="">skateboarding</a>
-            <a href="">editing</a>
-            <a href="">programmation</a>
-            <a href=""></a>
+        <div class="navitem"><a href="">English</a></div>
+        <div class="navitem"><a href="">skateboarding</a></div>
+        <div class="navitem"><a href="">editing</a></div>
+        <div class="navitem"><a href="">programmation</a></div>
     </nav>
 </header>
 
+<!--
+<header>
+    <div class="headerbar">
+        <h1 id="headertitle">Made By NicsHeel</h1>
+
+        <div class="Iconsheader">
+            <img src="images/icone N.png" alt="">
+            <img src="images/icon i.png" alt="">
+            <img src="images/icone C.png" alt="">
+            <img src="images/icone S.png" alt="">
+        </div>
+    </div>
+
+    <nav class="headernav">
+        <a href="">english</a>
+        <a href="">skateboarding</a>
+        <a href="">editing</a>
+        <a href="">programmation</a>
+    </nav>
+</header>
+-->
 
     <main>
         <article>
-            <section id="container1">
-                <div id="about nics">
+            <section class="container1">
+                <div class="aboutnics">
                     <h1>About NicsHeel</h1>
                     <p>Nics, he is a programmer, video editor, skater, english speaker,
                         he likes to learn things, he also tried to learn play guitar but he forget to practice
@@ -106,19 +126,69 @@
                         maybe the nics friend also will learn how to programming, it is would be cool. 
                     </p>
                 </div>
-                <div id="audio">
-                    <!--background music-->
-                    <audio id="backgroundMusic" autoplay loop>
+
+                <!-- Música de fundo do site -->
+                <audio id="backgroundMusic" src="audio/fundo.mp3" autoplay loop>
                         <source src="audios/map postal 2.mp3" type="audio/mpeg">
                         <source src="audios/Map Postal 2.wav" type="audio/wav">
                     </audio>
-                    <!-- My favorite rock: -->
+                    <!--
+                     My favorite rock: 
                     <p>My Favority Rock Yeah</p>
                     <audio id="Rock" controls>
                         <source src="audios/Kids Arent Alrigth.mp3" type="audio/mpeg">
                         <source src="audios/Kids Arent Alrigth.wav" type="audio/wav">
                     </audio>
-                </div>
+                    -->
+
+                
+<div id="retro-player">
+    <div class="player-title">
+        <span>♫ Media Player</span>
+        <span class="title-symbol">_ □ ×</span>
+    </div>
+
+    <audio id="audio" src="/audios/Kids Arent Alrigth.mp3"></audio>
+
+    <div class="player-content">
+        <div id="song-name">The Kids Aren't Alrigth.mp3</div>
+
+        <div class="progress-container">
+            <input
+                type="range"
+                id="progress"
+                min="0"
+                max="100"
+                value="0"
+                aria-label="Progresso da música"
+            >
+        </div>
+
+        <div class="time">
+            <span id="current-time">00:00</span>
+            <span id="duration">00:00</span>
+        </div>
+
+        <div class="player-buttons">
+            <button id="play" type="button">▶ Play</button>
+            <button id="pause" type="button">Ⅱ Pause</button>
+        </div>
+
+        <div class="volume-container">
+            <label for="volume">Volume:</label>
+            <input
+                type="range"
+                id="volume"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.7"
+            >
+        </div>
+    </div>
+</div>
+
+
                 <div id="image">
                     <!-- NicsHeel Image: -->
                     <a href="https://www.youtube.com/@NicsHeel" title="This is The NicsHeel" target="_blank">

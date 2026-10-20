@@ -109,11 +109,11 @@ a {
 
 header {
     background-color: rgba(210, 210, 210, 0.808);
-    border: 3px solid;
+    border: 1px solid #888; 
 }
 
 .headerbar {
-    background-color: rgb(18, 9, 188);
+    background-color: rgb(11, 3, 164);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,8 +123,10 @@ header {
 #headertitle {
     color: whitesmoke;
     padding-left: 15px;
-    font-size: 20px;
+    font-size: 14px;
     overflow-wrap: break-word;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 300;
 }
 
 .Iconsheader {
@@ -145,7 +147,17 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    font-size: 0.9e;
+    font-size: 0.7em;
+}
+
+.navitem {
+    background-color: #ccc;
+    padding: 10px 15px;
+    border: 1px solid #888;
+}
+
+.navitem:hover {
+    background-color: rgb(195, 195, 195);
 }
 
 a {
@@ -155,9 +167,110 @@ a {
 
 /* Container here: */
 
-#container1 {
-    background-color: rgb(199, 255, 114);
-    display: none;
+.container1 {
+    background-color: rgba(210, 210, 210, 0.808);
+}
+
+/* Audio Player */
+
+
+#retro-player {
+    width: 320px;
+    max-width: 100%;
+    background-color: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #404040 #404040 #ffffff;
+    padding: 3px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.player-title {
+    background-color: #000080;
+    color: white;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.title-symbol {
+    font-size: 12px;
+}
+
+.player-content {
+    padding: 12px 8px 8px;
+}
+
+#song-name {
+    background-color: #fff;
+    border: 2px solid;
+    border-color: #404040 #fff #fff #404040;
+    padding: 7px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+}
+
+#progress {
+    width: 100%;
+    cursor: pointer;
+    accent-color: #000080;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.player-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 14px 0;
+}
+
+.player-buttons button {
+    background-color: #c0c0c0;
+    border: 2px solid;
+    border-color: #fff #404040 #404040 #fff;
+    padding: 7px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.player-buttons button:active {
+    border-color: #404040 #fff #fff #404040;
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+#volume {
+    width: 100%;
+    cursor: pointer;
+    accent-color: #000080;
+}
+
+
+.aboutnics > p {
+    font-family: "VT323", sans-serif;
+    font-size: 1.5em;
 }
 
 #container2 {
