@@ -103,3 +103,8 @@ audio.addEventListener("ended", () => {
         console.log("Não foi possível retomar a música de fundo:", error);
     });
 });
+backgroundMusic.volume = 1;
+
+backgroundMusic.play().catch(() => {
+    // O navegador pode bloquear a reprodução automática.
+});
