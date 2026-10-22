@@ -6,6 +6,8 @@
     <title>NicsHeel Studying html</title>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media-query.css">
     
@@ -78,7 +80,7 @@
 
         <div class="Iconsheader">
             <img class="N" src="images/icone N.png" alt="">
-            <img class="I" src="images/icone i.png" alt="">
+            <img class="I" src="images/is.png" alt="">
             <img class="C" src="images/icone C.png" alt="">
             <img class="S" src="images/icone S.png" alt="">
         </div>
@@ -123,7 +125,7 @@
                         he likes to learn things, he also tried to learn play guitar but he forget to practice
                         one day he will learn to play guitar, he will to be a good skater, good video editor,
                         good programmer and fluently in english, i hear storys, he want to create cool thing in programmation yeah,
-                        maybe the nics friend also will learn how to programming, it is would be cool. 
+                        maybe the nics friend also will learn how to programming, it is would be cool.
                     </p>
                 </div>
 
@@ -142,7 +144,9 @@
                     -->
 
                 <h1 id="titleplayer">favorite Rock:</h1>
-<div id="retro-player">
+
+<div class="container">
+    <div id="retro-player">
     <div class="player-title">
         <span>♫ Media Player</span>
         <span class="title-symbol">_ □ ×</span>
@@ -192,11 +196,11 @@
             >
         </div>
     </div>
+    </div>
 </div>
 
 
-
-                <div id="image">
+                <div id="imagenicsheel">
                     <!-- NicsHeel Image: -->
                     <a href="https://www.youtube.com/@NicsHeel" title="This is The NicsHeel" target="_blank">
                     <img src="images/NicsHeel.png" alt="This is The NicsHeel"
@@ -206,16 +210,17 @@
             </section>
         </article>
 
-        <br id="br1">
-
         <article>
             <section id="container2">
-                <div id="video">
+                <h1 class="favoritetrick">Favorite Trick:</h1>
+                <div class="video">
                     <video width="450px" controls autoplay loop muted>
                         <source src="videos/VarialHeel.mp4" type="video/mp4">
                         <source src="videos/VarialHeelflip.webm" type="video/webm">
                     </video>
                 </div>
+                <div id="containerquestions">
+                    <h1 class="titlequestions">N-Questions Heel</h1>
                 <div class="questions">
                     <details>
                         <summary>Who is this guy in the left?</summary>
@@ -242,20 +247,21 @@
                         </p>
                     </details>
                 </div>
+                </div>
             </section>
         </article>
     </main>
 
     <footer>
-        <nav>
-            <a href="index.html">Videos</a>
-            <a href="">Inventions</a>
-            <a href="">portifólio</a>
-        </nav>
-        <address id="contact">
-            <h1>contacts</h1>
-            <a href="https://www.youtube.com/@NicsHeel" title="comment your idea in my videos, you will win credits, i like read comments" target="_blank">Youtube</a>
-            <a href="https://github.com/NicsHeel" title="comment your idea in one of my projects made by NicsHeel, you will win credits Yeah." target="_blank">GitHub</a>
+        <address class="contact">
+            <h1 id="title-contact">contacts</h1>
+            <div id="divcontact">
+            <img id="youtube-icon" src="/images/png youtube.png">
+            <a id="afooter1" href="https://www.youtube.com/@NicsHeel" title="comment your idea in my videos, you will win credits, i like read comments" target="_blank">Youtube</a>
+            <i class="fa-brands fa-github"></i>
+            <a id="afooter2" href="https://github.com/NicsHeel" title="comment your idea in one of my projects made by NicsHeel, you will win credits Yeah." target="_blank">GitHub</a>
+            </i>
+            </div>
         </address>
     </footer>
 

@@ -6,6 +6,10 @@ html, body {
     background-color: #DFDFDF;
 }
 
+body {
+    margin: 0;
+}
+
 * {
     font-family: "Silkscreen", "VT323", sans-serif;
     padding: 0px;
@@ -192,8 +196,22 @@ a {
     margin-left: 15px;
     margin-right: 15px;
 }
+.aboutnics p {
+    margin-bottom: 8px;
+}
 
+#imagenicsheel {
+    display: none;
+}
 
+.aboutnics p {
+    margin-bottom: 10px;
+}
+
+.aboutnics > p {
+    font-family: "VT323", sans-serif;
+    font-size: 1.5em;
+}
 
 /* Audio Player */
 
@@ -205,19 +223,28 @@ a {
 
 }
 
+.container {
+    border: 2px solid ;
+    border-color: #DFDFDF #DFDFDF #404040 #DFDFDF;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 #retro-player {
     width: 320px;
     max-width: 100%;
     background-color: #c0c0c0;
+
     border: 2px solid;
     border-color: #ffffff #404040 #404040 #ffffff;
+
     padding: 3px;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     color: #000;
 
-    box-sizing: border-box;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 .player-title {
@@ -302,25 +329,103 @@ a {
 }
 
 
-.aboutnics > p {
-    font-family: "VT323", sans-serif;
-    font-size: 1.5em;
-}
 
-/*brake 1*/
-#br1 {
-    border-style: solid;
-    border-color: white #404040 #404040 white;
-}
+/* NiQuestions */
 
 #container2 {
-    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white #DFDFDF #dfdfdf white;
+
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+
+.favoritetrick,
+.titlequestions,
+.questions {
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 2px solid;
+}
+
+.favoritetrick {
+    border-color: #DFDFDF;
+}
+
+.video {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    border: 2px solid;
+    border-color: #404040 white white #404040;
+}
+
+.video video {
+    display: block;
+}
+
+.titlequestions {
+    margin-top: 15px;
+    padding: 5px;
+    border-color: #404040 ;
+    color: white;
+    background-color: #0f8b09;
+}
+
+.questions {
+    border-color: #404040 ;
+    border-top-color: white;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.questions[open] summary {
+    border-bottom: 2px solid #404040;
+}
+
+.questions p {
+    padding: 10px;
+    margin: 0;
+}
+
+/*image*/
+
+#imagenicsheel {
     display: none;
 }
+
+/* Footer */
 
 footer {
-    background-color: bisque;
-    display: none;
+    border: 2px solid;
+    border-color: white;
+    outline: 2px solid #404040;
 }
 
+.contact {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
 
+#title-contact {
+    margin-bottom: 10px;
+}
+
+#afooter1 {
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+#afooter2 {
+    font-size: 1.1em;
+}
+
+#youtube-icon {
+    width: 50px;
+}
